@@ -1,0 +1,140 @@
+*{
+font-family: Helvetica, Arial, sans-serif;
+}
+body{
+font-family: Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
+width: 94.88%;
+margin: auto;
+padding:0;
+font-size: 100%;
+}
+header{
+background-color: rgb(59,89,152);
+width: 100%;
+height:88px;
+border-bottom:1px solid rgb(19,55,131);
+}
+main{
+width: 100%;
+height: 630px;
+}
+#reg
+{
+   float:left;
+   width: 405px;
+   /*width: 31.64%;*/
+   margin-top: 13px;
+   margin-left: 56.64%; 
+}
+#reg:after{
+
+content:"";
+clear: both;
+}
+#eop,#psw
+{
+  float: left;
+  width: 150px;
+  margin-right: 15px;
+  display: block;
+}
+#eop input, #psw input
+{
+  height: 23px;
+  border: 1px solid blue;
+}
+#eop label, #psw label
+{
+   margin-right: 7px;
+   color: white;
+}
+#login
+{
+   float:left;
+   width: 74px;
+   height: 22px;
+   margin-top: 20px;
+   border: 1px solid blue;
+   text-align: center;
+   color: white;
+   background-color: blue;
+   font-size: 0.5625em;
+}
+header p 
+{
+padding-top: 60px;
+padding-left: 69.53%;
+margin:0;
+}
+#reg2
+{
+  margin-top: 118px;
+  margin-left: 50%;
+}
+#lastname
+{
+  width: 192px;
+  border: 1px solid rgb(189,199,216);
+  height: 38px;
+  margin-right: 6px;
+  margin-bottom: 14px;
+  border-radius: 3px;
+}
+#firstname
+{
+  width:192px;
+  height: 38px;
+  border: 1px solid rgb(189,199,216);
+  margin-bottom: 14px;
+  border-radius: 3px;
+}
+#firstemail, #secondemail,#newpassword
+{
+width: 398px;
+height:38px;
+border: 1px solid rgb(189,199,216);
+margin-bottom: 14px;
+border-radius: 3px;
+}
+#date
+{
+  display:block;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+#sdate
+{
+    height:21px;
+    width: 59px;
+    border: 1px solid rgb(189,199,216);
+    margin-right: 5px;
+    margin-bottom: 22px;
+}
+#smonth
+{
+    height:21px;
+    width: 83px;
+    border: 1px solid rgb(189,199,216);
+    margin-right: 5px;
+    margin-bottom: 22px;
+}
+#syear
+{
+    height:21px;
+    width: 57px;
+    border: 1px solid rgb(189,199,216);
+    margin-right: 5px;
+    margin-bottom: 22px;
+}
+#signup
+{
+    border: 1px solid rgb(59,110,34);
+    border-radius:3px;
+    background-color: rgb(99,164,80);
+    text-align:center;
+    color:white;
+    height:37px;
+    width:192px;
+    margin-top: 82px;
+    margin-bottom: 100px;
+}
