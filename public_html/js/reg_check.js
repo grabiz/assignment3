@@ -10,27 +10,27 @@ var signUp = function()
 	var isValid2 = true;
 	if ((lastName == "") || (firstName == "") || (firstEmail== "") || (newPassword ==""))
 	{
-		alert("All field must be filled");
+		alert("Phải điền đầy đủ thông tin không được để trống");
 		isValid2 = false;
 	}
 	if ((lastName !=="") && (lastName.length >= 20))   
 	{  
-	   alert("Last name has maximum 20 characters !");
+	   alert("Họ phải có ít hơn 20 ký tự!");
        isValid2 = false;
     }
 	if ((firstName !=="") && (firstName.length >= 20))
     {
-		alert("First name has maximum 20 characters !");
+		alert("Tên phải có ít hơn 20 ký tự!");
         isValid2 = false;
 	}		
 	if (secondEmail !== firstEmail)
 	{
-		alert("Two emails must be identical !!!");
+		alert("Mail không trùng khớp !!!");
 		isValid2 = false;
 	}
 	if ((newPassword !=="") && (newPassword.length < 8))
 	{
-		alert ("Password must have at least 8 characters !! ");
+		alert ("Mật khẩu phải có ít nhất 8 ký tự!! ");
 		isValid2 = false;
 	}
     if (isValid2)
@@ -47,12 +47,19 @@ var logIn = function()
 	var typePassword = $("typepassword").value;
 	var isValid = true;
 	
-	if ((emailPhone == "") || (typePassword ==""))	
+	if ((emailPhone == "") && (typePassword ==""))	
 	{  
-	   alert("Quên mật khẩu ?");
-       isValid = false;
-    } 
-    if (isValid)
+	   alert("Lần đầu sử dụng hãy đăng ký");
+           isValid = false;
+        }
+        else 
+            {if ((emailPhone == "")||(typePassword ==""))
+                 {
+                     alert("Quên email hay mật khẩu ?");
+                     isValid = false;
+                 }
+            }
+        if (isValid)
 	{
 		
 		alert("Đăng nhập thành công");

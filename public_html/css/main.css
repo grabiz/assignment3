@@ -1,19 +1,115 @@
 *{
 font-family: Helvetica, Arial, sans-serif;
+
 }
 body{
 font-family: Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
 width: 94.88%;
+min-width: 505px;
 margin: auto;
 padding:0;
-font-size: 100%;
+font-size:100%;
 }
+@media only screen and (max-width:1150px)
+{
+body{
+    font-size: 80%;
+}
+}
+@media only screen and (max-width:767px)
+{
+body{
+    font-size: 60%;
+}
+}
+/*---------------Header---------------*/
 header{
 background-color: rgb(59,89,152);
 width: 100%;
 height:88px;
 border-bottom:1px solid rgb(19,55,131);
+position: relative;
 }
+#leftlogo
+{
+    margin-top: 28px;
+    float:left;
+    width: 13.28%;
+    margin-left: 15%;
+    margin-right: 8.36%; 
+}
+#leftlogo img
+{
+    max-width: 100%;
+}
+#reg
+{
+   float:left;
+   position: absolute;
+   right: 15%;
+   /*width: 405px;419px*/
+   /*width: 31.64%;*/
+   width: 32.73%;
+   margin-top: 13px;
+   margin-left: 20%; 
+}
+#reg:after{
+
+content:"";
+clear: both;
+}
+#eop,#psw
+{
+  float: left;
+  width:37.47%;
+  /*width:37.03%;*/
+  /*width: 150px155;
+  margin-right: 15px;*/
+  margin-right: 3.57%;
+  display: block;
+}
+#eop input, #psw input
+{
+  width: 98.726%;
+  height: 1.4375em;
+  /*height: 23px;*/
+  border: 1px solid blue;
+}
+#eop label, #psw label
+{
+   width: 98.726%;
+   margin-right: 3.57%;
+   /*margin-right: 7px;*/
+   color: white;
+   font-size: 0.65em;
+}
+#login
+{
+   float:left;
+   width: 17.66%;
+   height: 1.375em;
+   /*width: 74px;
+   height: 22px;*/
+   margin-top: 20px;
+   border: 1px solid blue;
+   text-align: center;
+   color: white;
+   background-color: blue;
+   font-size: 0.65em;
+}
+#login:after
+{
+    content:"";
+    clear: both;
+}
+#reg p 
+{
+padding-left: 42.95%;
+font-size: 0.7em;
+color:white;
+margin:0;
+}
+/*--------Main--------------*/
 main{
 width: 100%;
 height: 630px;
@@ -26,63 +122,30 @@ background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(214,219,234,1)); /*
 {
  float:left;
  height: 632px;
- width: 55%;
- margin-left: 5px;
- 
+ width: 35%;
+ margin-left: 5%;
+ margin-right:8%;
+}
+#leftside img 
+{
+  max-width: 100%;    
+}
+#leftside p
+{
+ font-size: 1.2em;
+ font-weight: bold;
+    
 }
 #rightside
 {
     float: left;
     height: 632px;
-    width: 415px;
+    width: 35%;
+    /*width: 415px;*/
 }
-#reg
+#rightside p
 {
-   float:left;
-   width: 405px;
-   /*width: 31.64%;*/
-   margin-top: 13px;
-   margin-left: 56.64%; 
-}
-#reg:after{
-
-content:"";
-clear: both;
-}
-#eop,#psw
-{
-  float: left;
-  width: 150px;
-  margin-right: 15px;
-  display: block;
-}
-#eop input, #psw input
-{
-  height: 23px;
-  border: 1px solid blue;
-}
-#eop label, #psw label
-{
-   margin-right: 7px;
-   color: white;
-}
-#login
-{
-   float:left;
-   width: 74px;
-   height: 22px;
-   margin-top: 20px;
-   border: 1px solid blue;
-   text-align: center;
-   color: white;
-   background-color: blue;
-   font-size: 0.5625em;
-}
-header p 
-{
-padding-top: 60px;
-padding-left: 69.53%;
-margin:0;
+    font-size: 1em;
 }
 #reg2
 {
@@ -91,58 +154,72 @@ margin:0;
 }
 #lastname
 {
-  width: 192px;
+  width: 46%;
+  /*width: 192px;*/
   border: 1px solid rgb(189,199,216);
-  height: 38px;
-  margin-right: 6px;
-  margin-bottom: 14px;
+  font-size: 1.5em;
+  /*height: 2.375em;*/
+  /*height: 38px;*/
+  margin-right: 1.45%;
+  /*margin-bottom: 14px;*/
+  margin-bottom: 0.8em;
   border-radius: 3px;
 }
 #firstname
 {
-  width:192px;
-  height: 38px;
+  width: 46.265%;
+  font-size: 1.5em; 
+  /*width:192px;
+  height: 38px;*/
   border: 1px solid rgb(189,199,216);
-  margin-bottom: 14px;
+  margin-bottom: 0.8em;
   border-radius: 3px;
 }
 #firstemail, #secondemail,#newpassword
 {
-width: 398px;
-height:38px;
+width:95.9%;
+font-size: 1.5em; 
+/*width: 398px;
+height:38px;*/
 border: 1px solid rgb(189,199,216);
-margin-bottom: 14px;
+margin-bottom: 0.8em;
 border-radius: 3px;
 }
 #date
 {
   display:block;
   font-size: 1em;
-  margin-bottom: 10px;
+  margin-bottom: 0.75em; /*10*/
 }
 #sdate
 {
-    height:21px;
-    width: 59px;
+    width: 14.21%;
+    font-size: 1em;
+    /*height:21px;
+    width: 59px;*/
     border: 1px solid rgb(189,199,216);
     margin-right: 5px;
-    margin-bottom: 22px;
+    margin-bottom: 1.65em; /*22*/
 }
 #smonth
 {
-    height:21px;
-    width: 83px;
+    width: 20%;
+    /*height:21px;
+    width: 83px;*/
     border: 1px solid rgb(189,199,216);
     margin-right: 5px;
-    margin-bottom: 22px;
+    margin-bottom: 1.65em;
+    font-size: 1em;
 }
 #syear
 {
-    height:21px;
-    width: 57px;
+    width: 13.73%;
+    /*height:21px;
+    width: 57px;*/
     border: 1px solid rgb(189,199,216);
     margin-right: 5px;
-    margin-bottom: 22px;
+    margin-bottom: 1.65em;
+    font-size: 1em;
 }
 #signup
 {
@@ -153,9 +230,10 @@ border-radius: 3px;
     color:white;
     height:37px;
     width:192px;
-    margin-top: 82px;
-    margin-bottom: 100px;
+    margin-top: 6em; /*82*/
+    margin-bottom: 6em;
 }
+/*-----------------------------*/
 footer
 {
     width:100%;

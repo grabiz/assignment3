@@ -16,6 +16,9 @@
 <body>
    <header>
         
+       <div id="leftlogo">
+           <img src="pictures/logo.png" alt="logo">
+       </div>
         <form name="reg" id="reg" action="" method="get">
             <div id="eop">
                 <label for="emailorphone">Email hoặc điện thoại</label><br>
@@ -26,12 +29,14 @@
                  <input type="text" name="password" id="typepassword">
             </div>
             <input type="button" name="button" id="login" value="Đăng Nhập">
+            <p style="margin-top: 50px;">Quên tài khoản</p>
         </form>
-		<p>Quên tài khoản</p>
+		
     </header>
 <main>
     <div id="leftside">
         <p>Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn.</p>
+        <img src="pictures/left.png" alt="leftimage">
     </div>
     <div id="rightside">
     <h1>ĐĂNG KÝ</h1>
@@ -44,6 +49,7 @@
         <input type="text" name="newpassword" id="newpassword" placeholder="Mật khẩu mới" required><br>
         <label for="date" id="date">Ngày sinh</label>
 	<select name="date" id="sdate">
+        <option name="" value="0" selected>Ngày</option>    
         <option name="" value="1">1</option>
         <option name="" value="2">2</option>
         <option name="" value="3">3</option>
@@ -77,6 +83,7 @@
         <option name="" value="31">31</option>
         </select>
         <select name="month" id="smonth">
+        <option name="" value="0">Tháng</option>
         <option name="jan" value="1">1</option>
         <option name="feb" value="2">2</option>
         <option name="mar" value="3">3</option>
@@ -91,6 +98,7 @@
         <option name="dec" value="12">12</option>
         </select>
         <select name="year" id="syear">
+        <option  name="" value="" selected>Năm</option>
         <option  name="" value="2016">2016</option>
         <option  name="" value="2015">2015</option>
         <option  name="" value="2014">2014</option>
