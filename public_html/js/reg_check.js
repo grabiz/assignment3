@@ -72,4 +72,3 @@ var logIn = function()
 	 $("signup").onclick = signUp; 
 	 $("login").onclick = logIn; 
 }
-/* https://www.formget.com/how-to-create-pop-up-contact-form-using-javascript/ */
